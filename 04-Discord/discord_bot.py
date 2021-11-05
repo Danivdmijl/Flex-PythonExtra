@@ -23,8 +23,7 @@ async def on_message(message):
     print(message.author,"is de persoon die het bericht schreef.")
     print(message.created_at,"is het moment dat het bericht geplaatst is.")
     print(message.channel,"is het kanaal waar het bericht geplaatst is.")
-
-    await message.channel.send("Hallo " + message.author)
+    await message.channel.send("Hallo " + str(message.author))
     if message.author.bot == False:
         message.channel.send
 
